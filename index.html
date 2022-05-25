@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive food website design tutorial </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-light container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa fa-cutlery" aria-hidden="true"></i>myBakery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+          
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact us.html">Contact us</a>
+              </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+            <li class="nav-item cart">
+                <a class="nav-link" href="cart.html"><i class="fa fa-shopping-cart  " aria-hidden="true"></i>Cart<span></span></a>
+              </li>
+        </ul>
+        </div>
+      </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+<!-- <section class="home" id="home"> -->
+
+    <div class="container-fluid">
+    <div id="carouselExampleControls " class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-flex w-100 " src="images/cover3.jpg" style="height: 50%;"  alt="First slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div> 
+<!-- </section> -->
+
+
+<!-- home section ends -->
+
+<!-- speciality section starts  -->
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"> Best <span>Selling</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box" >
+             <!-- Button trigger modal on picture  -->
+           <a data-toggle="modal" data-target="#exampleModal"><img class="image"  src="images/items/cookies.jpg"></a>
+            <div class="content" >
+                <img src="images/s-1.png" alt="">
+                <h3>Cookies</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>          
+            </div> 
+           
+  <!-- Modal Box for sub-Categories -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title container  text-center text-danger display-4" id="exampleModalLabel">Your Favourite cookies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <!-- Item 1 -->
+                  <div class="col-md-6">    
+                    <div class="card float-left" style="width: 100%;">
+                        <img class="card-img-top" src="images/items/redvelvet.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">Red Velvet Cookie</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light text-primary  add-cart cart1">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="col-md-6">
+                    <div class="card " style="width: 100%;">
+                        <img class="card-img-top" src="images/items/chocolatechunk.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">Chocolate Chunk Cookie</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-light text-primary add-cart cart2">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!-- Item 3 -->
+                <div class="col-md-6">    
+                  <div class="card " style="width: 100%;">
+                      <img class="card-img-top" src="images/items/oreocrumble.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger bg-light">Oreo Crumbl Cookie</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-light text-primary add-cart cart3">Order now</a>
+                      </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-6">
+                  <div class="card " style="width: 100%;">
+                      <img class="card-img-top" src="images/items/OatmealRaisin.webp" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger bg-light">Oatmeal Raisin</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-light text-primary add-cart cart4">Order now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <!-- DONUTS -->
+     <div class="box" >
+      <!-- Button trigger modal on picture  -->
+    <a data-toggle="modal" data-target="#exampleModal1"><img class="image"  src="images/items/donuts.jpg"></a>
+     <div class="content" >
+         <img src="images/s-1.png" alt="">
+         <h3>Donuts</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>          
+     </div> 
+    
+<!-- Modal Box for sub-Categories -->
+<div class="modal fade " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+ <div class="modal-header">
+   <h5 class="modal-title container  text-center text-danger display-4" id="exampleModalLabel">Your Favourite donuts</h5>
+   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+   </button>
+ </div>
+ <div class="modal-body">
+   <div class="container">
+       <div class="row">
+           <!-- Item 1 -->
+           <div class="col-md-6">    
+             <div class="card float-left" style="width: 100%;">
+                 <img class="card-img-top" src="images/items/vanillaglaze.jpg" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title text-danger bg-light">Vanilla Glazed Donut</h5>
+                   <p class="card-text">A donut rich in texture and coated with pure vanilla flavor extracted from finest beans.</p>
+                   <a href="#" class="btn btn-light text-primary  add-cart cart5">Order now</a>
+                 </div>
+               </div>
+           </div>
+           <!-- Item 2 -->
+           <div class="col-md-6">
+             <div class="card " style="width: 100%;">
+                 <img class="card-img-top" src="images/items/rainbow.jpg" alt="Card image cap">
+                 <div class="card-body">
+                   <h5 class="card-title text-danger bg-light">Rainbow Sprinkled Donut</h5>
+                   <p class="card-text">A fun version of our classic donut sprinked with colorful rainbow sprinkles to spark joy!</p>
+                   <a href="#" class="btn btn-light text-primary">Order now</a>
+                 </div>
+               </div>
+           </div>
+       </div>
+       <div class="row">
+         <!-- Item 3 -->
+         <div class="col-md-6">    
+           <div class="card " style="width: 100%;">
+               <img class="card-img-top" src="images/items/cinnamon.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title text-danger bg-light">Cinnamon Dusted Donut</h5>
+                 <p class="card-text">Donut with light and heartwarming flavor of cinnamon which makes a perfect pair for evening tea.</p>
+                 <a href="#" class="btn btn-light text-primary">Order now</a>
+               </div>
+             </div>
+         </div>
+         <!-- Item 4 -->
+         <div class="col-md-6">
+           <div class="card " style="width: 100%;">
+               <img class="card-img-top" src="images/items/chocolate.jpg" alt="Card image cap">
+               <div class="card-body">
+                 <h5 class="card-title text-danger bg-light">Chocolate Donut</h5>
+                 <p class="card-text">Our All Time Favorite!! Rich chocolately goodness to savour at any time of the day!</p>
+                 <a href="#" class="btn btn-light text-primary">Order now</a>
+               </div>
+             </div>
+         </div>
+     </div>
+    </div>
+ </div>
+ <div class="modal-footer">
+   <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Close</button>
+   <button type="button" class="btn btn-success text-white">Save changes</button>
+ </div>
+</div>
+</div>
+</div>
+</div>
+      <!-- PASTRIES -->
+      <div class="box" >
+        <!-- Button trigger modal on picture  -->
+      <a data-toggle="modal" data-target="#exampleModal4"><img class="image"  src="images/items/pastries.jpg"></a>
+       <div class="content" >
+           <img src="images/s-1.png" alt="">
+           <h3>Pastries</h3>
+           <p>Pastry is baked food made with a dough of flour, water and shortening that may be savoury or sweetened. Sweetened pastries are often described as bakers' confectionery.</p>          
+       </div> 
+      
+<!-- Modal Box for sub-Categories -->
+<div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+ <div class="modal-content">
+   <div class="modal-header">
+     <h5 class="modal-title container  text-center text-danger display-4" id="exampleModalLabel">Your Favourite Pastries</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+     </button>
+   </div>
+   <div class="modal-body">
+     <div class="container">
+         <div class="row">
+             <!-- Item 1 -->
+             <div class="col-md-6">    
+               <div class="card float-left" style="width: 100%;">
+                   <img class="card-img-top" src="images/items/mango.jpg" alt="Card image cap">
+                   <div class="card-body">
+                     <h5 class="card-title text-danger bg-light">Mango Pastry</h5>
+                     <p class="card-text">Use Mangos for Desserts! By: Linda Fox It’s mango season! Mangos are plentiful in Mexico in the spring and summer. Wherever you live, now is the time to enjoy this delicious fruit flavour in pastries.</p>
+                     <a href="#" class="btn btn-light text-primary">Order now</a>
+                   </div>
+                 </div>
+             </div>
+             <!-- Item 2 -->
+             <div class="col-md-6">
+               <div class="card " style="width: 100%;">
+                   <img class="card-img-top" src="images/items/pineApple.jpg" alt="Card image cap">
+                   <div class="card-body">
+                     <h5 class="card-title text-danger bg-light">Pine Apple Pastry</h5>
+                     <p class="card-text">Pine Apple Pastry is everyone's favorite, so this flavor is sure to win the hearts of every people. It is decorated with cherry and pineapple chips.</p>
+                     <a href="#" class="btn btn-light text-primary">Order now</a>
+                   </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+           <!-- Item 3 -->
+           <div class="col-md-6">    
+             <div class="card " style="width: 100%;">
+              <img class="card-img-top" src="images/items/black-forest-pastries.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-danger bg-light">Black Forest Pastry</h5>
+                <p class="card-text"> Ingredients for Black Forest Pastry Recipe Dark chocolate sponge 1 Whipped cream 2 cups Fresh cherries pitted, 1 cup + for garnish Sugar.</p>
+                   <a href="#" class="btn btn-light text-primary">Order now</a>
+                 </div>
+               </div>
+           </div>
+           <!-- Item 4 -->
+           <div class="col-md-6">    
+            <div class="card " style="width: 100%;">
+              <img class="card-img-top" src="images/items/blueberrey.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text-danger bg-light"> Blueberry pastry </h5>
+                <p class="card-text"> Here's blueberry to impart the flavour like never before. This delicious blueberry pastries is sure to leave you spellbound with its perfect dose of richly whipped cream</p>
+                  <a href="#" class="btn btn-light text-primary">Order now</a>
+                </div>
+              </div>
+          </div>
+
+       </div>
+      </div>
+   </div>
+   <div class="modal-footer">
+     <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Close</button>
+     
+   </div>
+ </div>
+</div>
+</div>
+</div>
+
+      <!--INSTANT REFRESHMENTS-->
+        <div class="box" >
+             <!-- Button trigger modal on picture  -->
+           <a data-toggle="modal" data-target="#exampleModal2"><img class="image"  src="images/items/instant.jpg"></a>
+            <div class="content" >
+                <img src="images/s-6.png" alt="">
+                <h3>Instant Refreshments(Ready To Serve)</h3>
+                <p>A drink is a liquid intended for human consumption. In addition to their basic function of satisfying thirst, drinks play important roles in human culturE. It includes coffee , tea , shake etc.</p>          
+            </div> 
+           
+  <!-- Modal Box for sub-Categories -->
+  <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title container  text-center text-danger display-4" id="exampleModalLabel">Your Favourite refreshments</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <!-- Item 1 -->
+                 
+
+                  <div class="col-md-6">    
+                    <div class="card float-left" style="width: 100%;">
+                        <img class="card-img-top" src="images/items/coffee.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">COLD COFFEE</h5>
+                          <p class="card-text">Cold coffee is a coffee beverage served cold. It may be prepared either by brewing coffee normally and then serving it over ice or in cold milk, or by brewing the coffee cold.</p>
+                          <a href="#" class="btn btn-light text-primary">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="col-md-6">
+                    <div class="card " style="width: 100%;">
+                        <img class="card-img-top" src="images/items/shake.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">SHAKES</h5>
+                          <p class="card-text">A Milkshake is a sweet beverage made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup etc.</p>
+                          <a href="#" class="btn btn-light text-primary">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!-- Item 3 -->
+                <div class="col-md-6">    
+                  <div class="card " style="width: 100%;">
+                      <img class="card-img-top" src="images/items/mocha.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger bg-light">MOCHA</h5>
+                        <p class="card-text">A caffè mocha also called mocaccino is a chocolate-flavoured warm beverage that is a variant of a café latte commonly served in a glass rather than a mug..</p>
+                        <a href="#" class="btn btn-light text-primary">Order now</a>
+                      </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="col-md-6">
+                  <div class="card " style="width: 100%;">
+                      <img class="card-img-top" src="images/items/macciato.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger bg-light">MACCHIATO</h5>
+                        <p class="card-text">A caffè macchiato or espresso macchiato is a shot of espresso topped with frothed milk. The word “macchiato” means “stained” in Italian, meaning that the dark espresso is stained by the milk foam on top.</p>
+                        <a href="#" class="btn btn-light text-primary">Order now</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--CUPCAKES-->
+        <div class="box" >
+             <!-- Button trigger modal on picture  -->
+           <a data-toggle="modal" data-target="#exampleModal4"><img class="image"  src="images/items/cupcakes.jpg"></a>
+            <div class="content" >
+                <img src="images/s-1.png" alt="">
+                <h3>Cupcakes</h3>
+                <p>A cupcake (also British English: fairy cake; Hiberno-English: bun) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied.</p>          
+            </div> 
+           
+  <!-- Modal Box for sub-Categories -->
+  <div class="modal fade " id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title container  text-center text-danger display-4" id="exampleModalLabel">Your Favourite cupcakes</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+              <div class="row">
+                  <!-- Item 1 -->
+                  <div class="col-md-6">    
+                    <div class="card float-left" style="width: 100%;">
+                        <img class="card-img-top" src="images/items/velvet.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">RED VELVET CUPCAKE</h5>
+                          <p class="card-text">Red Velvet Cupcake is a type of chocolate cake made with vinegar, buttermilk and red food colouring, with cream cheeseicing on top: The red velvet cake is a little sour because of all the buttermilk.</p>
+                          <a href="#" class="btn btn-light text-primary">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="col-md-6">
+                    <div class="card " style="width: 100%;">
+                        <img class="card-img-top" src="images/items/caramel.webp" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-danger bg-light">SALTED CARAMEL CUPCAKE</h5>
+                          <p class="card-text">These are made with brown sugar which gives them a natural caramelised flavour. There is salted caramel piped into the center of the cake for that extra delicious surprise when you bite into them.</p>
+                          <a href="#" class="btn btn-light text-primary">Order now</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <!-- Item 3 -->
+                <div class="col-md-6">    
+                  <div class="card " style="width: 100%;">
+                      <img class="card-img-top" src="images/items/strawberry.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title text-danger bg-light">STRAWBERRY CUPCAKE</h5>
+                        <p class="card-text">A popular dessert made of a form of layered cake with strawberry toppings.</p>
+                        <a href="#" class="btn btn-light text-primary">Order now</a>
+                      </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                
+            </div>
+           </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger text-white" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+    </div>
+
+</section>
+
+<!-- speciality section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> most <span>popular</span> foods </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-1.jpg" alt="">
+            <h3>tasty burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-2.jpg" alt="">
+            <h3>tasty cakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-3.jpg" alt="">
+            <h3>tasty sweets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-4.jpg" alt="">
+            <h3>tasty cupcakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-5.jpg" alt="">
+            <h3>cold drinks</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="images/p-6.jpg" alt="">
+            <h3>cold ice-cream</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- steps section starts  -->
+
+<div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+</div>
+
+<!-- steps section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading"> our food <span> gallery </span> </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <img src="images/fg1.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg2.jpg" alt="">
+        
+      </div>
+      <div class="box">
+          <img src="images/fg3.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg4.jpg" alt="">
+         
+      </div>
+      <div class="box">
+          <img src="images/fg5.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg6.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg7.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg8.jpg" alt="">
+          
+      </div>
+      <div class="box">
+          <img src="images/fg9.jpg" alt="">
+          
+      </div>
+
+  </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+
+    <div class="box-container">
+
+
+        <div class="box">
+            <img src="images/pic1.png" alt="">
+            <h3>john deo</h3>
+            
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+        <div class="box">
+            <img src="images/pic2.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+        <div class="box">
+            <img src="images/pic3.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>order</span> now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/order-img.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="food name">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+        </form>
+
+    </div>
+
+</section>
+
+<!--  Map section starts  -->
+<div class="container">
+  <h1 class="heading"> <span>Visit</span> us </h1>
+  <div class="row ">
+      <div class="col-md-6">
+      <div class="Jumbotoron">
+       <h1 class="text-center text-white bg-danger display-2">Manhattan New York, NY USA</h1>
+      </div>
+      </div>   
+        
+      <div class="col-md-6">
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+              <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+            </div>
+         </div>   
+  </div>
+</div>
+
+<!-- Footer Section -->
+<hr/>
+<div class="footer-dark bg-danger">
+    <footer>
+        <div class="container">
+            <div class="row"><div class="col-md-3 item">
+<h3>Services</h3>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rerum cupiditate dolorum beatae
+     optio repellendus rem quod voluptas libero autem laboriosamquas?</h3>
+</div><div class="col-md-3 item">
+<h3>Services</h3>
+<ul>
+    <li><a href="#">Home Delivery</a></li>
+    <li><a href="#">Fresh Items</a></li>
+    <li><a href="#">Pick-up Delivery</a></li>
+</ul>
+</div><div class="col-md-3 item">
+<h3>About</h3>
+<ul>
+    <li><a href="#">Company</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Careers</a></li>
+</ul>
+</div><div class="col-md-3 item text">
+<h3>Cohort56/Pod1.com</h3>
+<p>Lorem ipsum dotatis sint.</p>
+</div>
+                <div class="col item social "><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-youtube"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google"></i></a></div>
+            </div>
+            <p class="copyright">Cohort56:POD1 &copy; 2022</p>
+        </div>
+    </footer>
+</div>
+
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+</body>
+</html>

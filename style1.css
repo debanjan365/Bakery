@@ -1,0 +1,43 @@
+
+body{color: rgba(222, 214, 214, 0.504)}
+.box{margin: auto}
+.card{padding: 8%;padding-top: 35px;margin-top: 60px;margin-bottom: 80px}textarea[name="message"]{resize: none}#e-mail{height: 45px}#message{height: 120px}
+input.input-box, textarea.input-box{background-color : #bdbdbd9a;border: #616161;color: #030303}
+input.input-box:focus, textarea.input-box:focus{background-color: #f9f8f8dd;color: #0c0c0c}
+.rm-border:focus{border-color: inherit;-webkit-box-shadow: none;box-shadow: gray}
+form .form-control::-webkit-input-placeholder{color: #9E9E9E}::-moz-placeholder{color: #9E9E9E !important}
+input.btn-purple{background-color: #f84040;color: #ffffff}
+
+.btn-home{background-color: #f84040;
+    color: #ffffff; 
+    top: 50%;
+    left: 50%;
+    padding: 14px 40px;
+    font-size : 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px
+}
+
+.btn-home span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn-home span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-home:hover span {
+    padding-right: 25px;
+  }
+  
+.btn-home:hover span:after {
+    opacity: 1;
+    right: 0;
+}
